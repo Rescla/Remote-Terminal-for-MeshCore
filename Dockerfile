@@ -13,7 +13,7 @@ RUN VITE_COMMIT_HASH=${COMMIT_HASH} npm run build
 
 
 # Stage 2: Python runtime
-FROM python:3.14-slim
+FROM python:3.14-alpine
 
 ARG COMMIT_HASH=unknown
 
