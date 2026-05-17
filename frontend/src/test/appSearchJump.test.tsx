@@ -238,7 +238,7 @@ describe('App search jump target handling', () => {
   it('clears jump target when user selects a non-search conversation', async () => {
     await act(async () => {
       render(<App />);
-    })
+    });
 
     await waitFor(() => {
       expect(screen.getAllByText('Open Search').length).toBeGreaterThan(0);
